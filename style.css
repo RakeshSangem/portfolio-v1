@@ -1,9 +1,11 @@
-*, :after, :before {
+*,
+:after,
+:before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
@@ -33,6 +35,7 @@ nav {
 nav > ul {
   list-style: none;
   display: flex;
+  gap: 40px;
 }
 nav a {
   text-decoration: none;
@@ -65,7 +68,6 @@ h3 {
   background: linear-gradient(to top, #4776e6 0%, #8e54e9 74%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
 .description {
   display: flex;
