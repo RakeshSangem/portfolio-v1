@@ -177,7 +177,6 @@ h3 {
 @media screen and (max-width: 665px) {
   nav {
     flex-direction: column;
-    border: none;
     gap: 15px;
   }
   .CTA {
@@ -203,6 +202,18 @@ h3 {
 @media screen and (max-width: 520px) {
   .hero h1 {
     font-size: 3.5rem;
+  }
+  .description {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: row;
+
+    gap: 15px;
+  }
+  nav > ul {
+    display: none;
   }
 }
 
