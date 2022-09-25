@@ -44,6 +44,10 @@ nav a {
 nav svg {
   margin: 10px;
 }
+.hover-animation:hover{
+  color: #4777e6;
+  transition: all ease 0.3s;
+}
 /* Hero section */
 section {
   padding: 0 40px;
