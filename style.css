@@ -45,18 +45,8 @@ nav svg {
   margin: 10px;
 }
 .hover-animation:hover{
-  background-color: #4777e6;
-  color: #ffffff;
-  border-radius: 5px;
-  padding: 9px;
-  transition: 0.2s; 
-}
-.hover-animation-svg:hover {
-  background-color: #4777e6;
-  border-radius: 50%;
-  stroke: #ffffff;
-  padding : 3px;
-  transition: 0.2s;
+  color: #4777e6;
+  transition: all ease 0.3s;
 }
 /* Hero section */
 section {
