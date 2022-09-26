@@ -181,11 +181,12 @@ h3 {
 .footer {
   background: #66666610;
   bottom: 0 !important;
-  position: relative;
+  margin: 0;
+  z-index: 6 !important;
+
 }
 
 .footer-nav {
-  position: relative;
   display: flex !important;
   flex-direction: column !important;
   text-align: left;
@@ -193,6 +194,10 @@ h3 {
   padding-left: 10rem !important;
   bottom: 0 !important;
   border: none !important;
+  font-size: 1.25rem;
+  flex-wrap: wrap;
+  margin: 0;
+  position: sticky;
 }
 
 .bottom-social {
@@ -203,7 +208,6 @@ h3 {
   align-items: center !important;
   padding: 4rem !important;
   margin: 0 !important;
-  bottom: 0 !important;
 }
 
 .social-icons ul {
@@ -274,6 +278,15 @@ h3 {
     flex-direction: column;
     gap: 30px;
   }
+  .footer {
+    width: 100%;
+    margin-top: 50vh !important;
+  }
+  .bottom-social {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 565px) {
@@ -288,6 +301,10 @@ h3 {
     height: auto;
     margin: 50px 0px;
   }
+  .footer {
+    width: 100%;
+    margin-top: 50vh !important;
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -300,11 +317,14 @@ h3 {
 
   nav {
     flex-direction: row;
-
     gap: 15px;
   }
   nav > ul {
     display: none;
+  }
+  .footer {
+    width: 100%;
+    margin-top: 50vh !important;
   }
 }
 
@@ -316,10 +336,18 @@ h3 {
   .CTA {
     padding: 60px 30px;
   }
+  .footer {
+    width: 100%;
+    margin-top: 50vh !important;
+  }
 }
 
 @media screen and (max-width: 424px) {
   .hero h1 {
     font-size: 3rem;
+  }
+  .footer {
+    width: 100%;
+    margin-top: 50vh !important;
   }
 }
