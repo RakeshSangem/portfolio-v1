@@ -44,7 +44,7 @@ nav a {
 nav svg {
   margin: 10px;
 }
-.hover-animation:hover{
+.hover-animation:hover {
   color: #4777e6;
   transition: all ease 0.3s;
 }
@@ -175,6 +175,91 @@ h3 {
   height: 100%;
   object-fit: cover;
   border-radius: 18px;
+}
+
+/* FOOTER */
+.footer-nav {
+  display: flex !important;
+  flex-direction: column !important;
+  text-align: left;
+  padding-top: 20px !important;
+  padding-left: 100px !important;
+  bottom: 0 !important;
+  border: none !important;
+  background: #fff !important;
+}
+
+.bottom-social {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background: #fff;
+  padding: 4rem !important;
+  margin: 0 !important;
+  bottom: 0 !important;
+}
+
+.social-icons ul {
+  padding-left: 0;
+}
+
+.social-icons {
+  height: 3rem !important;
+  bottom: 0;
+  top: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.social-icons img {
+  width: 10rem !important;
+  border-radius: 20% !important;
+}
+
+.social-icons ul,
+.social-icons li {
+  margin-bottom: 0;
+  bottom: 0;
+  padding-bottom: 0;
+}
+
+.footer-nav p {
+  font-size: 2rem;
+  padding-left: 60px;
+  margin: 0;
+}
+
+.footer-nav li {
+  display: block;
+  font-size: 20px;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+}
+
+.footer-nav li a {
+ color: #2f2f2f; 
+}
+
+.footer-nav li a:hover {
+  opacity: 1;
+  color: #4777e6;
+  transition: all ease 0.3s;
+}
+
+.footer-nav img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.currentYear {
+  font-size: 1.25rem;
+  color: #2f2f2f;
 }
 
 /*  MEDIA QUERIES */
