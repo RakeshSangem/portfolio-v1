@@ -183,19 +183,25 @@ h3 {
   bottom: 0 !important;
   margin: 0;
   z-index: 6 !important;
+}
 
+.footer {
+  text-align: center;
+}
+.footer p {
+  margin: 0;
+  padding-bottom: 2rem;
+  color: #2f2f2f75;
 }
 
 .footer-nav {
-  display: flex !important;
-  flex-direction: column !important;
-  text-align: left;
-  padding-top: 3rem !important;
-  padding-left: 10rem !important;
-  bottom: 0 !important;
-  border: none !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   font-size: 1.25rem;
-  flex-wrap: wrap;
   margin: 0;
   position: sticky;
 }
@@ -208,6 +214,7 @@ h3 {
   align-items: center !important;
   padding: 4rem !important;
   margin: 0 !important;
+  padding-bottom: 1rem !important;
 }
 
 .social-icons ul {
@@ -219,7 +226,7 @@ h3 {
   flex-direction: row;
   width: 89%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: 3rem !important;
   bottom: 0;
   top: 0;
@@ -238,10 +245,11 @@ h3 {
 }
 
 .footer-nav li {
-  display: block;
+  display: inline;
   font-size: 20px;
   margin: 0;
   padding-bottom: 5px;
+  padding: 1rem;
 }
 
 .footer-nav a {
@@ -305,6 +313,12 @@ h3 {
     width: 100%;
     margin-top: 50vh !important;
   }
+  .footer-nav li{
+    font-size: 1rem !important;
+  }
+  .footer p{
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -326,6 +340,10 @@ h3 {
     width: 100%;
     margin-top: 50vh !important;
   }
+
+  .footer-nav li{
+    font-size: 1rem !important;
+  }
 }
 
 @media screen and (max-width: 440px) {
@@ -340,6 +358,10 @@ h3 {
     width: 100%;
     margin-top: 50vh !important;
   }
+  
+  .footer-nav li{
+    font-size: 1rem !important;
+  }
 }
 
 @media screen and (max-width: 424px) {
@@ -349,5 +371,9 @@ h3 {
   .footer {
     width: 100%;
     margin-top: 50vh !important;
+  }
+  
+  .footer-nav li{
+    font-size: 1rem !important;
   }
 }
