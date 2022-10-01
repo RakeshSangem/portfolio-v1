@@ -4,16 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="assets/r.png" type="image/x-icon" />
+
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
       rel="stylesheet"
     />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
     <title>Rakesh | Portfolio</title>
   </head>
+
   <body>
     <header>
       <a href="#">
@@ -51,6 +58,7 @@
           </li>
         </ul>
         <div class="Icons">
+          <button type="button" class="dark">
           <svg
             width="22"
             height="22"
@@ -70,6 +78,8 @@
               </clipPath>
             </defs>
           </svg>
+          </button>
+
           <a href="https://www.twitter.com/RakeshSangem8" target="_blank">
             <svg
               width="25"
@@ -140,7 +150,7 @@
       </div>
     </section>
 
-    <div style="background: #fff; height: 400px" class="forHeight"></div>
+    <div style="height: 400px" class="forHeight"></div>
 
     <!-- FOOTER -->
     <footer>
@@ -396,5 +406,13 @@
           "Rakesh Sangem, Open Source " + a;
       </script>
     </footer>
+
+    <script>
+      const dark=document.querySelector(".dark")
+      dark.addEventListener('click',()=>{
+          document.documentElement.classList.toggle('dark-theme');
+      })
+    </script>
+
   </body>
 </html>
