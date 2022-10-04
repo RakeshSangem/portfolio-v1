@@ -12,17 +12,50 @@ body {
   margin: 0;
 }
 
+:root {
+  --clr-bcg: #fff;
+  --clr-font: #282c35;
+  --clr-primary: #d23669;
+  --clr-grey: #64748b;
+  --clr-foot: #eee;
+  --clr-nav: transparent;
+  --clr-svg: invert(0%) sepia(0%) saturate(0%) hue-rotate(183deg) brightness(88%) contrast(105%);
+}
+
+/* dark mode */
+.dark{
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.dark-theme{
+  --clr-bcg: #282c35;
+  --clr-font: #fff;
+  --clr-primary: #ffa7c4;
+  --clr-grey: #cbd5e1;
+  --clr-foot: #00000099;
+  --clr-nav: #00000050;
+  --clr-svg: invert(99%) sepia(36%) saturate(18%) hue-rotate(304deg) brightness(104%) contrast(100%);
+}
+
 body {
+  background: var(--clr-bcg);
   min-height: 100%;
   margin: 0;
   font-family: "Poppins", sans-serif;
   width: 100%;
-  color: #2f2f2f;
+  color: var(--clr-font);
   overflow-x: hidden;
+  transition: all 0.3s linear;
 }
 
 body::after {
   display: block;
+}
+
+svg{
+  filter: var(--clr-svg);
 }
 
 a {
@@ -42,6 +75,7 @@ nav {
   padding: 10px 40px;
   align-items: center;
   justify-content: space-between;
+  background: var(--clr-nav);
 }
 nav > ul {
   list-style: none;
@@ -50,7 +84,7 @@ nav > ul {
 }
 nav a {
   text-decoration: none;
-  color: #2f2f2f;
+  color: var(--clr-font);
 }
 nav svg {
   margin: 10px;
@@ -72,7 +106,7 @@ section {
 }
 h3 {
   font-weight: 600;
-  color: #2f2f2f;
+  color: var(--clr-font);
 }
 .hero h1 {
   margin: -15px 0;
@@ -90,7 +124,7 @@ h3 {
 .description p {
   margin: 0 1rem;
   font-weight: 600;
-  color: #968fb2;
+  color: var(--clr-grey);
 }
 .CTA {
   display: flex;
@@ -155,7 +189,7 @@ h3 {
   top: 200px;
   left: 0;
   transform: rotate(-90deg);
-  color: #666666;
+  color: var(--clr-grey);
   font-size: 6rem;
   opacity: 0.2;
 }
@@ -179,6 +213,7 @@ h3 {
   border-radius: 18px;
   transition: all 0.5s ease-in-out;
 }
+
 .project-card:hover {
   transform: scale(1.04);
   transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
@@ -191,6 +226,7 @@ h3 {
 }
 
 .forHeight {
+  background: var(--clr-bcg);
   height: 200px;
   display: block !important;
   bottom: 400px;
@@ -200,7 +236,7 @@ h3 {
 footer {
   top: 50vh;
   display: block;
-  background-color: #eee;
+  background-color: var(--clr-foot);
   text-align: center;
   bottom: 0;
   z-index: 101;
@@ -212,7 +248,7 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: #2f2f2f;
+  color: var(--clr-font);
   font-size: 1.25rem;
 }
 
@@ -226,7 +262,7 @@ ul li {
 
 li {
   list-style-type: none;
-  color: #2f2f2f !important;
+  color: var(--clr-font) !important;
 }
 
 .links {
@@ -237,7 +273,7 @@ li {
 }
 
 .links li {
-  color: #2f2f2f;
+  color: var(--clr-font);
   padding: 10px;
   margin: 10px;
 }
@@ -253,7 +289,7 @@ li {
 
 .currentYear {
   font-size: 1rem;
-  color: #2f2f2f85;
+  color:var(--clr-grey);
 }
 
 /*  MEDIA QUERIES */
