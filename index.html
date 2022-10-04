@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/r.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/r-transparent.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -109,15 +109,15 @@
 
     <section class="hero">
       <div class="textSection">
-        <h3>Hello, I am <span style="color: #0774d9">Rakesh</span></h3>
-        <h1>FRONT-END DEVELOPER</h1>
+        <h3 class="name">Hello, I am <span style="color: #0774d9">Rakesh</span></h3>
+        <h1 class="job">FRONT-END DEVELOPER</h1>
         <div class="description">
-          <p>• Open Source Contributor</p>
-          <p>• Freelancer</p>
+          <p class="job-1">• Open Source Contributor</p>
+          <p class="job-2">• Freelancer</p>
         </div>
         <div class="CTA">
-          <button class="btn"><a href="">Let's get in touch!</a></button>
-          <button class="btn-outline"><a href="">Check out my blog</a></button>
+          <button class="btn btn-1"><a href="">Let's get in touch!</a></button>
+          <button class="btn-outline btn-2"><a href="">Check out my blog</a></button>
         </div>
       </div>
     </section>
@@ -396,5 +396,10 @@
           "Rakesh Sangem, Open Source " + a;
       </script>
     </footer>
+
+
+    <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

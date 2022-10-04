@@ -177,12 +177,12 @@ h3 {
   height: 350px;
   box-shadow: 0 2px 4px rgb(45 35 66 / 35%), 0 7px 13px -3px rgb(45 35 66 / 25%);
   border-radius: 18px;
-  transition: all 0.5s ease-in-out;
+  /* transition: all 0.5s ease-in-out; */
 }
-.project-card:hover {
+/* .project-card:hover {
   transform: scale(1.04);
   transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
-}
+} */
 .project-card > img {
   width: 100%;
   height: 100%;
