@@ -37,7 +37,7 @@ gsap.from('.project-card', {
         trigger: ".project-card",
         start: "top center"
     },
-    y: -150,
+    y: 150,
     opacity: 0,
     stagger: .2,
     duration: .5
