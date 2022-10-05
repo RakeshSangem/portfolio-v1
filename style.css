@@ -199,7 +199,7 @@ h3 {
 
 /* FOOTER */
 footer {
-  top: 50vh;
+  /*top: 50vh;*/
   display: block;
   background-color: #eee;
   text-align: center;
@@ -208,7 +208,7 @@ footer {
   height: 200px;
   margin-bottom: 0;
   position: relative;
-  padding-bottom: 25px;
+  /*padding-bottom: 25px;*/
 }
 
 footer a {
