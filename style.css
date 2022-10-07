@@ -86,6 +86,7 @@ h3 {
 .description {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: center;
 }
 .description p {
   margin: 0 1rem;
@@ -198,7 +199,7 @@ h3 {
 
 /* FOOTER */
 footer {
-  top: 50vh;
+  /*top: 50vh;*/
   display: block;
   background-color: #eee;
   text-align: center;
@@ -207,7 +208,7 @@ footer {
   height: 200px;
   margin-bottom: 0;
   position: relative;
-  padding-bottom: 25px;
+  /*padding-bottom: 25px;*/
 }
 
 footer a {
@@ -266,8 +267,22 @@ li {
     flex-direction: column;
     gap: 30px;
   }
+
+  .hero {
+    margin-top: 70px;
+  }
+
+  .projects {
+    margin-top: 20px;
+  }
+
+  .project-card {
+    width: 420px ;
+  }
+
   footer {
-    margin-top: 200px;
+    margin-top: 450px;
+    /*top: 100vh;*/
   }
 }
 
@@ -277,7 +292,7 @@ li {
   }
 
   .project-card {
-    width: 600px;
+    width: 490px;
   }
   .hero {
     height: auto;
@@ -305,8 +320,19 @@ li {
     display: none;
   }
 
+  .project-card {
+    width: 380px;
+  }
+
   footer {
-    margin-top: 200px;
+    /*margin-top: 200px;*/
+    top:  100vh;
+    height: fit-content;
+  }
+
+  .links {
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
@@ -320,7 +346,14 @@ li {
   }
 
   footer {
-    margin-top: 200px;
+    /*margin-top: 200px;*/
+    top:  100vh;
+    height: fit-content;
+  }
+
+  .links {
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
@@ -329,7 +362,18 @@ li {
     font-size: 3rem;
   }
 
+  .project-card {
+    width: 90vw;
+  }
+
   footer {
-    margin-top: 200px;
+    /*margin-top: 200px;*/
+    top:  100vh;
+    height: fit-content;
+  }
+
+  .links {
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
