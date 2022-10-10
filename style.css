@@ -139,6 +139,179 @@ h3 {
   text-decoration: none;
   color: #ffffff;
 }
+
+/* skill section */
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+.skill h1{
+  font-size: 4rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+
+}
+.t-outline-pill,.n-outline-pill {
+  color: teal;
+  font-weight: 600;
+  margin: 15px;
+  height: 30px;
+  width: 150px;
+  padding-top:3px;
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid teal;
+  font-family: 'Open Sans';
+  background-color: none;
+  transition: background-color .3s, color .3s;
+}
+
+.t-outline-pill:hover,.n-outline-pill:hover {
+  color: white;
+  background-color: teal;
+  
+}
+
+.r-outline-pill {
+  color: purple;
+  font-weight: 600;
+  margin: 15px;
+  height: 30px;
+  width: 150px;
+  padding-top:3px;
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid purple;
+  font-family: 'Open Sans';
+  background-color: none;
+  transition: background-color .3s, color .3s;
+}
+
+.r-outline-pill:hover {
+  color: white;
+  background-color: purple;
+}
+
+.p-outline-pill {
+  color: blue;
+  font-weight: 600;
+  margin: 15px;
+  height: 30px;
+  width: 150px;
+  padding-top:3px;
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid blue;
+  font-family: 'Open Sans';
+  background-color: none;
+  transition: background-color .3s, color .3s;
+}
+
+.p-outline-pill:hover {
+  color: white;
+  background-color: blue;
+}
+
+.o-outline-pill {
+  color: rgb(228, 91, 13);
+  font-weight: 600;
+  margin: 15px;
+  height: 30px;
+  width: 150px;
+  padding-top:3px;
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid rgb(228, 91, 13);
+  font-family: 'Open Sans';
+  background-color: none;
+  transition: background-color .3s, color .3s;
+}
+
+.o-outline-pill:hover {
+  color: white;
+  background-color: rgb(228, 91, 13);
+}
+.k-outline-pill {
+  color: black;
+  font-weight: 600;
+  margin: 15px;
+  height: 30px;
+  width: 150px;
+  padding-top:3px;
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid black;
+  font-family: 'Open Sans';
+  background-color: none;
+  transition: background-color .3s, color .3s;
+}
+
+.k-outline-pill:hover {
+  color:white;
+  background-color: black;
+}
+.l-outline-pill {
+  color: yellow;
+  font-weight: 600;
+  margin: 15px;
+  height: 30px;
+  width: 150px;
+  padding-top:3px;
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid yellow;
+  font-family: 'Open Sans';
+  background-color: none;
+  transition: background-color .3s, color .3s;
+}
+
+.l-outline-pill:hover {
+  color:white;
+  background-color: yellow;
+}
+.m-outline-pill {
+  color: hotpink;
+  font-weight: 600;
+  margin: 15px;
+  height: 30px;
+  width: 150px;
+  padding-top:3px;
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid hotpink;
+  font-family: 'Open Sans';
+  background-color: none;
+  transition: background-color .3s, color .3s;
+}
+
+.m-outline-pill:hover {
+  color:white;
+  background-color: hotpink;
+}
+.i-outline-pill {
+  color: darkred;
+  font-weight: 600;
+  margin: 15px;
+  height: 30px;
+  width: 250px;
+  padding-top:3px;
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid darkred;
+  font-family: 'Open Sans';
+  background-color: none;
+  transition: background-color .3s, color .3s;
+}
+
+.i-outline-pill:hover {
+  color:white;
+  background-color: darkred;
+}
+
 /* Project section */
 .projects {
   display: flex;
