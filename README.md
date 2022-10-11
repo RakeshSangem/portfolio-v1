@@ -1,3 +1,9 @@
+![GitHub contributors](https://img.shields.io/github/contributors/RakeshSangem/portfolio?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/RakeshSangem/portfolio?style=for-the-badge)
+![GitHub Repo stars](https://img.shields.io/github/stars/RakeshSangem/portfolio?color=deeppink&style=for-the-badge)
+![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/RakeshSangem/portfolio?color=orchid&style=for-the-badge)
+![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/RakeshSangem/portfolio?style=for-the-badge)
+
 # portfolio- Website
 This is my personal portfolio website built using HTML, CSS, JavaScript.
 
