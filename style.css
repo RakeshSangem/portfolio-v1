@@ -354,6 +354,9 @@ li {
     height: 220px;
     border-radius: 8px;
   }
+  .project-card > img {
+    border-radius: 8px;
+  }
   .links {
     display: none;
   }
