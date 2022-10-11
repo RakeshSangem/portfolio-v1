@@ -50,7 +50,7 @@ nav > ul {
 }
 nav a {
   text-decoration: none;
-  color: #2f2f2f;
+  color: #575555;
 }
 nav svg {
   margin: 10px;
@@ -82,6 +82,9 @@ h3 {
   background: linear-gradient(to top, #4776e6 0%, #8e54e9 74%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.name{
+  color: #b8b6c4;
 }
 .description {
   display: flex;
@@ -201,7 +204,6 @@ h3 {
 footer {
   /*top: 50vh;*/
   display: block;
-  background-color: #eee;
   text-align: center;
   bottom: 0;
   z-index: 101;
@@ -213,7 +215,7 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: #2f2f2f;
+  color: #968fb2;
   font-size: 1.25rem;
 }
 
@@ -377,3 +379,10 @@ li {
     flex-direction: column;
   }
 }
+  .dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  .logo-dark{
+    color: white;
+  }
