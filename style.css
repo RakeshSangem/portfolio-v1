@@ -127,6 +127,7 @@ h3 {
   -webkit-border-radius: 6;
   -moz-border-radius: 6;
   color: #333;
+  background: transparent;
   border-radius: 6px;
   font-family: Arial;
   box-shadow: 0 2px 4px rgb(45 35 66 / 35%), 0 7px 13px -3px rgb(45 35 66 / 25%);
@@ -316,7 +317,7 @@ li {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
   nav {
     padding: 10px 20px;
   }
@@ -365,5 +366,9 @@ li {
   }
   .currentYear {
     font-size: 0.9rem;
+  }
+  .watermark {
+    left: -140px;
+    font-size: 4rem;
   }
 }
