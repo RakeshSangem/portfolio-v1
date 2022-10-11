@@ -25,11 +25,36 @@ body::after {
   display: block;
 }
 
-a {
+a.nav {
+  position: relative;
   text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+  font-weight: bolder;
+  display: inline-block;
+
 }
-a:visited {
-  color: inherit;
+a.nav::after{
+  content: '';
+  position: absolute;
+  background-color: #ff3c78;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: -10px;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: 0.3s ease-out; 
+}
+a.nav:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  
 }
 header {
   display: flex;
