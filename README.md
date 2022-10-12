@@ -1,4 +1,4 @@
-# portfolio- Website
+# Portfolio- Website
 This is my personal portfolio website built using HTML, CSS, JavaScript.
 
 ## Demo
@@ -9,3 +9,9 @@ This is my personal portfolio website built using HTML, CSS, JavaScript.
 Want to chat with me? Join my discord server from below badge.
 
 [![Join now - Discord](https://img.shields.io/badge/Join_now-Discord-2ea44f?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/CapGk4dEaV)
+
+------
+
+<div align="center">
+<h3>Don't forget to ⭐ this repo</h3>
+</div>
