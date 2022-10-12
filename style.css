@@ -240,6 +240,128 @@ h3 {
   border-radius: 18px;
 }
 
+/* CONTACT */
+.contact-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+.contact-container {
+  min-height: 50vh;
+  display: flex;
+  width: 60vw;
+  background: #d4e2ff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgb(45 35 66 / 35%), 0 7px 13px -3px rgb(45 35 66 / 25%);
+}
+.contact-info {
+  color: #fff;
+  background: #4776ee;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1rem;
+}
+.contact-info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact-info-text {
+  position: relative;
+}
+.contact-info-text::before {
+  content: '';
+  position: absolute;
+  top: -16px;
+  height: 8px;
+  width: 100px;
+  border-radius: 8px;
+  background: #0ed4ff;
+}
+.contact-info-heading {
+  font-size: 2rem;
+  color: #fff;
+}
+.contact-info-icons {
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 0.8rem;
+}
+.contact-icons {
+  width: 28px;
+  cursor: pointer;
+  transition: 300ms;
+}
+.contact-icons:hover {
+  transform: scale(1.2);
+}
+.contact-form {
+  width: 100%;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-name, .contact-email, .contact-message {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contact-label {
+  font-size: 1rem;
+}
+.contact-input {
+  background: #ffffffaa;
+  padding: 4px 8px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #00000055;
+}
+.contact-input:focus {
+  border: 1px solid #00000000;
+  outline: 2px solid #4776ee;
+}
+input, textarea {
+  font-family: "Poppins", sans-serif;
+}
+textarea {
+  resize: vertical;
+}
+.contact-submit {
+  margin-top: 0.5rem;
+  background: #4776ee;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 200px;
+  align-self: right;
+  border-radius: 4px;
+  transition: 300ms;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.contact-submit:hover {
+  background: #4776eeee;
+  transform: scale(0.95);
+}
+.contact-send-icon {
+  transform: rotate(45deg);
+}
+input::placeholder, textarea::placeholder {
+  color: #000000aa;
+}
+
 /* FOOTER */
 footer {
   display: flex;
@@ -314,6 +436,25 @@ li {
 
   .project-card {
     width: 420px ;
+  }
+
+  .contact-page {
+    min-height: 90vh;
+    margin-bottom: 20vh;
+  }
+  .contact-container {
+    width: 80vw;
+    min-height: 40vh;
+    flex-direction: column;
+  }
+  .contact-info {
+    gap: 2rem;
+  }
+  .contact-form {
+    padding: 4rem 2rem;
+  }
+  .contact-info-icons {
+    margin-bottom: 0;
   }
 }
 
