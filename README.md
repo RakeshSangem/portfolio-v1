@@ -1,6 +1,6 @@
 # Portfolio- Website
 ### Hi there! <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="29px"> I'm Rakesh Sangem
-##Front-End Developer
+## Front-End Developer
 This is my portfolio website built using HTML, CSS, JavaScript.
 
 ## Demo
