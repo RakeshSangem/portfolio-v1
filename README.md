@@ -1,5 +1,6 @@
 # Portfolio- Website
-This is my personal portfolio website built using HTML, CSS, JavaScript.
+### Hi there! <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="29px"> I'm Rakesh Sangem
+This is my portfolio website built using HTML, CSS, JavaScript.
 
 ## Demo
 ![portfolio](https://user-images.githubusercontent.com/107752425/192083103-e773c142-6ed0-4223-8fca-62525c2f908a.png)
@@ -14,4 +15,7 @@ Want to chat with me? Join my discord server from below badge.
 
 <div align="center">
 <h3>Don't forget to ⭐ this repo</h3>
+</div>
+<div align="center">
+<h3>Made with &#10084; with Open Source Team</h3>
 </div>
