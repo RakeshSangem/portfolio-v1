@@ -208,6 +208,10 @@ h3 {
   background-clip: padding-box;
   border: solid 2px transparent;
 }
+.chips:hover{
+  background: linear-gradient(to top, #4776e6 0%, #8e54e9 74%);
+  color: #ffffff;
+}
 
 .chips:before {
   content: '';
