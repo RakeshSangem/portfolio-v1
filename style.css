@@ -392,19 +392,6 @@ li {
   color: #2f2f2f !important;
 }
 
-.links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.links li {
-  color: #2f2f2f;
-  padding: 10px;
-  margin: 10px;
-}
-
 .social {
   padding-top: 25px;
 }
