@@ -253,13 +253,7 @@ h3 {
   opacity: 0.2;
 }
 
-.project-cards {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(500px, 1fr));
-  z-index: 5;
-  gap: 4rem;
-  margin-bottom: 2rem;
-}
+
 
 .project-card {
   max-width: 500px;
