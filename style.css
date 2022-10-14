@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 html,
 body {
@@ -21,10 +22,6 @@ body {
   overflow-x: hidden;
 }
 
-/* body::after { */
-/*   display: block; */
-/* } */
-
 a {
   text-decoration: none;
 }
@@ -35,6 +32,7 @@ header {
   display: flex;
   width: 100%;
 }
+
 /* Navbar styling */
 nav {
   width: 100%;
@@ -205,6 +203,7 @@ h3 {
 .projectText {
   font-size: 3rem;
   font-weight: normal;
+  margin-bottom: 4rem;
 }
 
 .watermark {
@@ -220,14 +219,13 @@ h3 {
 .project-cards {
   display: grid;
   grid-template-columns: repeat(2, minmax(500px, 1fr));
-  margin-top: 20px;
-  margin-bottom: 100px;
   z-index: 5;
+  gap: 4rem;
+  margin-bottom: 2rem;
 }
 
 .project-card {
-  margin: 20px;
-  width: 500px;
+  max-width: 500px;
   height: 350px;
   box-shadow: 0 2px 4px rgb(45 35 66 / 35%), 0 7px 13px -3px rgb(45 35 66 / 25%);
   border-radius: 18px;
@@ -317,6 +315,7 @@ h3 {
   font-size: 1rem;
 }
 .contact-input {
+  width: 100%;
   background: #ffffffaa;
   padding: 4px 8px;
   font-size: 1rem;
@@ -326,9 +325,6 @@ h3 {
 .contact-input:focus {
   border: 1px solid #00000000;
   outline: 2px solid #4776ee;
-}
-input, textarea {
-  font-family: "Poppins", sans-serif;
 }
 textarea {
   resize: vertical;
@@ -340,7 +336,7 @@ textarea {
   border: none;
   padding: 8px;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: normal;
   width: 200px;
   align-self: right;
   border-radius: 4px;
@@ -420,6 +416,18 @@ li {
 }
 
 /*  MEDIA QUERIES */
+@media screen and (max-width: 1110px) {
+  .hero, .hero h3{
+    text-align: center;
+  }
+  .project-cards {
+    gap: 2rem;
+  }
+  .contact-container {
+    min-width: 70vw;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .CTA {
     flex-direction: column;
@@ -432,6 +440,7 @@ li {
 
   .project-cards {
     grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 4rem;
   }
 
   .project-card {
