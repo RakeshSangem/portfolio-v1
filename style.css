@@ -41,7 +41,7 @@ nav {
   justify-content: space-between;
 }
 
-nav>ul {
+nav > ul {
   list-style: none;
   display: flex;
   gap: 40px;
@@ -58,20 +58,19 @@ nav a {
 nav svg {
   margin: 10px;
 }
-.icons{
+.icons {
   display: flex;
 }
-.icons > a{
+.icons > a {
   display: grid;
   place-items: center;
 }
-.icons a > svg path{
-  fill:#2f2f2f;
+.icons a > svg path {
+  fill: #2f2f2f;
 }
-.icons a:hover > svg path{
-  fill:#4777e6;
+.icons a:hover > svg path {
+  fill: #4777e6;
 }
-
 
 /* Hero section */
 section {
@@ -196,10 +195,11 @@ h3 {
   text-transform: capitalize;
   display: block;
   font-weight: 600;
-  transition: background-color .15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
   padding: 12px 20px;
   border-radius: 20px;
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
+    0 5px 15px 0 rgba(0, 0, 0, 0.08);
   display: flex;
   align-items: center;
   margin: auto;
@@ -210,13 +210,13 @@ h3 {
   background-clip: padding-box;
   border: solid 2px transparent;
 }
-.chips:hover{
+.chips:hover {
   background: linear-gradient(to top, #4776e6 0%, #8e54e9 74%);
   color: #ffffff;
 }
 
 .chips:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -254,25 +254,70 @@ h3 {
 }
 
 .project-cards {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(500px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
   z-index: 5;
-  gap: 4rem;
+  gap: 3rem;
   margin-bottom: 2rem;
 }
 
 .project-card {
-  max-width: 500px;
-  height: 350px;
-  box-shadow: 0 2px 4px rgb(45 35 66 / 35%), 0 7px 13px -3px rgb(45 35 66 / 25%);
-  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+  min-height: 28.12rem;
+  background-color: #110d1d;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  text-align: center;
 }
-
-.project-card>img {
+.imageContainer {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 4px;
+  overflow: hidden;
+  /* background-color: #136b7e; */
+}
+.imageContainer img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 18px;
+
+  /* height: 100%; */
+}
+.project-details {
+  padding: 0.4rem 0;
+}
+.project-details h2 {
+  color: rgb(222, 222, 222);
+  font-weight: 600;
+}
+.project-details p {
+  color: #938f9f;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.project-links {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+.project-links a {
+  display: flex;
+  gap: 10px;
+  column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0c1b;
+  padding: 0.5rem 1.2rem;
+  font-size: 16px;
+  color: #7e7b87;
+  border-radius: 8px;
+  border: 1px solid #1c1829;
 }
 
 /* CONTACT */
@@ -316,7 +361,7 @@ h3 {
 }
 
 .contact-info-text::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -16px;
   height: 8px;
@@ -449,7 +494,7 @@ footer a {
   cursor: pointer;
 }
 
-.social a:hover>svg path {
+.social a:hover > svg path {
   fill: #3c6ed9;
   transition: all 300ms ease-in-out;
 }
@@ -463,7 +508,7 @@ footer ul {
   padding: 20px;
 }
 
-footer li>a {
+footer li > a {
   color: #ffffff;
   transition: all 300ms ease-in-out;
 }
@@ -480,10 +525,10 @@ footer a:hover {
   color: rgb(95, 95, 95);
 }
 
-
 /*  MEDIA QUERIES */
 @media screen and (max-width: 1110px) {
-  .hero, .hero h3{
+  .hero,
+  .hero h3 {
     text-align: center;
   }
   .project-cards {
@@ -509,9 +554,9 @@ footer a:hover {
     margin-bottom: 4rem;
   }
 
-  .project-card {
+  /* .project-card {
     width: 420px;
-  }
+  } */
 
   .contact-page {
     min-height: 90vh;
@@ -543,11 +588,14 @@ footer a:hover {
 }
 
 @media screen and (max-width: 430px) {
+  section {
+    padding: 0 10px;
+  }
   nav {
-    padding: 10px 20px;
+    padding: 10px 10px;
   }
 
-  nav>ul {
+  nav > ul {
     display: none;
   }
 
@@ -587,12 +635,11 @@ footer a:hover {
   }
 
   .project-card {
-    width: 300px;
-    height: 220px;
+    /* width: 300px; */
+    max-height: 20rem;
     border-radius: 8px;
   }
-
-  .project-card>img {
+  .project-card > img {
     border-radius: 8px;
   }
 
