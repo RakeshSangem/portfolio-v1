@@ -5,7 +5,7 @@ export default [
     image:
       "https://user-images.githubusercontent.com/54346106/193443537-deab1b57-450d-4a1b-885e-0bb417b09882.png",
     github: "https://github.com/rakeshsangem/harkfolio",
-    live: "https://www.sharkfolio.vercel.app",
+    live: "https://sharkfolio.vercel.app/",
   },
   {
     title: "Bankist",
