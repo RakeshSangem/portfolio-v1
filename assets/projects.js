@@ -14,7 +14,7 @@ export default [
     image:
       "https://user-images.githubusercontent.com/54346106/193443537-deab1b57-450d-4a1b-885e-0bb417b09882.png",
     github: "https://github.com/rakeshsangem/bankist-application",
-    live: "https://www.bankist-application.vercel.app",
+    live: "https://bankist-application.vercel.app",
   },
   {
     title: "Portfolio",
