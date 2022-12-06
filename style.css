@@ -22,9 +22,12 @@ body {
   color: #2f2f2f;
   overflow-x: hidden;
 }
-
-a {
+a,
+a:visited,
+a:hover,
+a:active {
   text-decoration: none;
+  color: inherit;
 }
 
 header {
@@ -140,6 +143,7 @@ h3 {
 
 .btn a {
   color: #ffffff;
+  text-decoration: none;
 }
 
 .btn:hover {
@@ -155,8 +159,8 @@ h3 {
   border-radius: 6px;
   font-family: Arial;
   box-shadow: 0 2px 4px rgb(45 35 66 / 35%), 0 7px 13px -3px rgb(45 35 66 / 25%);
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
+  font-size: 18px;
+  padding: 8px 20px;
   border: solid #4777e6 3px;
   text-decoration: none;
   transition: 300ms;
@@ -179,55 +183,38 @@ h3 {
   text-align: center;
   padding-bottom: 10px;
 }
-
-.chips-container {
-  margin: 5vh 10vw 20vh 10vw;
-  flex-wrap: wrap;
+.skillsContainer {
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-  gap: 1.8rem;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  /* background-color: red; */
 }
-
-.chips {
-  font-size: 1rem;
-  line-height: 1;
-  text-transform: capitalize;
-  display: block;
-  font-weight: 600;
-  transition: background-color 0.15s ease-in-out;
-  padding: 12px 20px;
-  border-radius: 20px;
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
-    0 5px 15px 0 rgba(0, 0, 0, 0.08);
+.skillsContainer li {
+  list-style: none;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin: auto;
-  position: relative;
-  box-sizing: border-box;
-  color: #000000;
-  background: #ffffff;
-  background-clip: padding-box;
-  border: solid 2px transparent;
+  font-weight: 600;
+  row-gap: 10px;
+  width: 1rem;
+  padding: 1rem 3rem;
+  transition: transform 400ms ease-out;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-.chips:hover {
-  background: linear-gradient(to top, #4776e6 0%, #8e54e9 74%);
-  color: #ffffff;
+.skillsContainer li:hover {
+  transform: scale(1.08);
+  transition: transform 0.6s ease-out;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px 0px rgba(50, 50, 50, 0.212);
+  /* border: 2px solid gray; */
 }
-
-.chips:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  margin: -2px;
-  border-radius: inherit;
-  background: linear-gradient(to right, #4776e6, #8e54e9);
-}
-
 .projects {
   display: flex;
   flex-direction: column;
