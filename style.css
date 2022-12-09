@@ -259,7 +259,7 @@ h3 {
   background-color: #110d1d;
   padding: 1.2rem;
   border-radius: 0.8rem;
-  text-align: center;
+  /* text-align: center; */
 }
 .imageContainer {
   width: 100%;
@@ -282,6 +282,7 @@ h3 {
 .project-details h2 {
   color: rgb(222, 222, 222);
   font-weight: 600;
+  margin: 0.5rem 0;
 }
 .project-details p {
   color: #938f9f;
@@ -289,10 +290,10 @@ h3 {
   font-size: 0.9rem;
 }
 .project-links {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   display: flex;
-  flex-direction: column;
-  row-gap: 0.5rem;
+  /* flex-direction: column; */
+  column-gap: 0.5rem;
 }
 .project-links a {
   display: flex;
