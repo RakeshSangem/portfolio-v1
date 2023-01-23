@@ -194,26 +194,28 @@ h3 {
 }
 .skillsContainer li {
   list-style: none;
-
+  /* opacity: 0; */
   display: flex;
   flex-direction: column;
   align-items: center;
   font-weight: 600;
   row-gap: 10px;
   width: 1rem;
+  border: 2px solid rgb(228, 227, 227);
+  border-radius: 10px;
   padding: 1rem 3rem;
-  transition: transform 400ms ease-out;
+  transition: transform 500ms ease-in;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  box-shadow: 0 4px 10px 0px rgba(50, 50, 50, 0.212);
 }
 .skillsContainer li:hover {
   transform: scale(1.08);
-  transition: transform 0.6s ease-out;
+  transition: transform 0.6s ease-in-out;
   border-radius: 8px;
-  box-shadow: 0 4px 10px 0px rgba(50, 50, 50, 0.212);
   /* border: 2px solid gray; */
 }
 .projects {
@@ -249,6 +251,7 @@ h3 {
   z-index: 5;
   gap: 3rem;
   margin-bottom: 2rem;
+  transition: all 1s ease;
 }
 
 .project-card {
@@ -512,6 +515,48 @@ footer a:hover {
   font-size: 1rem;
   font-weight: normal;
   color: rgb(95, 95, 95);
+}
+
+/* Animations */
+.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 2s ease;
+}
+.slide {
+  animation-name: slideIn;
+  animation-duration: 350ms;
+  animation-delay: calc(var(--animation-order) * 100ms);
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.57, 0.35, 0.01, 0.94);
+}
+.slideUp {
+  animation-name: slideUpAnimation;
+  animation-duration: 550ms;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.57, 0.35, 0.01, 0.94);
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideUpAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*  MEDIA QUERIES */
